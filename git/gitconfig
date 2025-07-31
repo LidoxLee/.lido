@@ -1,0 +1,55 @@
+[core]
+	excludesfile = ~/.gitignore_global
+
+[user]
+	# disabled by override in ~/.gituser
+	name =
+	email =
+
+[include]
+	# override user.name and user.email
+    path = ~/.gituser
+
+[init]
+	defaultBranch = main
+
+[merge]
+	tool = vimdiff
+
+[alias]
+	# show graph log
+	dag = log --decorate --abbrev-commit --graph
+
+	# update remote and prune
+	sync = remote update --prune
+
+	# show current author
+	author = !"[ -n \"$(git config user.name)\" ] && [ -n \"$(git config user.email)\" ] \
+		&& printf '%s <%s>\n' \"$(git config user.name)\" \"$(git config user.email)\" \
+		|| (echo 'git: author identity unknown' && exit 1)"
+
+	# show changes to a target branch
+	change = "!f() { git change-list $1 && git change-file $1; }; f"
+	change-list = "!f() { git log --pretty=format:'* %s' $1..; }; f"
+	change-file = "!f() { git diff --line-prefix='* ' --name-only $1..; }; f"
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	defaultKeyCommand = sh -c 'echo key::$(ssh-add -L)'
+
+[commit]
+	gpgSign = true
+
+[tag]
+	gpgSign = true
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

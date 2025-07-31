@@ -1,0 +1,61 @@
+{
+    // remote host
+    "remote.SSH.remotePlatform": {
+        "wx": "windows",
+        "dx": "linux"
+    },
+
+    // behavior
+    "security.workspace.trust.startupPrompt": "never",
+    "workbench.startupEditor": "none",
+    "window.confirmBeforeClose": "keyboardOnly",
+    "extensions.ignoreRecommendations": true,
+    
+    // sync
+    "settingsSync.ignoredExtensions": [],
+    "settingsSync.ignoredSettings": [],
+
+    // editor
+    "diffEditor.renderSideBySide": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.accessibilitySupport": "off",
+    
+    // completion
+    "editor.suggest.preview": true,
+    "editor.quickSuggestionsDelay": 0,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": "true",
+        "markdown": "true",
+        "scminput": false
+    },
+
+    // c/c++
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c17",
+
+    // telemetry
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "gitlens.telemetry.enabled": false,
+
+    // others
+    "makefile.configureOnOpen": false,
+    "githubPullRequests.pullBranch": "never",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.activityBar.location": "top",
+    "gitlens.views.scm.grouped.views": {
+        "commits": true,
+        "branches": true,
+        "remotes": true,
+        "stashes": true,
+        "tags": true,
+        "worktrees": false,
+        "contributors": true,
+        "repositories": true,
+        "searchAndCompare": true,
+        "launchpad": false
+    },
+}
