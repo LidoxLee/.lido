@@ -59,3 +59,48 @@
     official URL : https://www.docker.com/  
 - Postman  
     official URL : https://www.postman.com/  
+
+
+### 安裝的 app
+#### 開發工具
+- Android Studio  
+- Docker  
+- Visual Studio Code  
+- Azure Data Studio  
+- RedisDesk  
+- Postman  
+- GitHub Desktop  
+- MongoDB Compass  
+- Studio 3T  
+- DBeaver  
+- SoapUI  
+- MySQLWorkbench  
+
+#### 生產力工具
+- Anytype  
+- ClickUp  
+- Notion  
+- Slack  
+- Discord  
+- Google Chrome  
+
+#### 音樂與多媒體
+- Insta360 Studio  
+
+#### 系統工具
+- BetterTouchTool : A tool to customize input devices on macOS
+- Wine Stable : Software to run Windows applications on macOS
+
+#### 其他
+- BloomRPC : A GUI client for gRPC services
+- CapCut : A video editing software
+- Cursor : A code editor with AI features
+- Ganache : A personal Ethereum blockchain for development
+- IPFS Desktop : A desktop application for the InterPlanetary File System
+- iTourTranslator : A translation tool for travel
+- iTransor for LINE : A tool to backup and restore LINE chat history
+- Ledger Live : A cryptocurrency wallet application
+- Lens : A Kubernetes IDE
+- Postman Agent : A companion app for Postman to enable API testing
+- Xmind : A mind mapping and brainstorming software
+
